@@ -1,7 +1,7 @@
 {
   "name": "docstar-env-autosuggest",
   "version": "0.2.3",
-  "author": "Idris Bohra",
+  "author": "Swayam Maheshwari",
   "main": "build/index.js",
   "dependencies": {
     "react-icons": "^5.3.0",
