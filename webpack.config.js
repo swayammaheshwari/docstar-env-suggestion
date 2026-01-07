@@ -1,4 +1,5 @@
 var path = require('path');
+
 module.exports = {
     mode: 'production',
     entry: './src/App.js',
@@ -49,4 +50,24 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    plugins: [
+        {
+            apply: (compiler) => {
+                compiler.hooks.afterEmit.tap('AddUseClientDirective', (compilation) => {
+                    const fs = require('fs');
+                    // We can assume strict output structure as defined above
+                    const filePath = path.resolve(__dirname, 'build', 'index.js');
+                    if (fs.existsSync(filePath)) {
+                        const content = fs.readFileSync(filePath, 'utf8');
+                        // Prepend if not already present (optimization for watch mode)
+                        // Note: Checking strict start might fail if there are comments, but 'use client' should be first.
+                        // We strictly prepend it.
+                        if (!content.trim().startsWith('"use client";')) {
+                            fs.writeFileSync(filePath, '"use client";\n' + content);
+                        }
+                    }
+                });
+            }
+        }
+    ]
 };
