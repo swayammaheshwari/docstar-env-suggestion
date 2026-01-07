@@ -3,12 +3,15 @@
   "version": "0.2.1",
   "author": "Idris Bohra",
   "main": "build/index.js",
+  "dependencies": {
+    "react-icons": "^5.3.0",
+    "webpack": "^5.73.0"
+  },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "react-icons": "^5.3.0",
     "@babel/core": "^7.25.2",
     "@babel/plugin-proposal-optional-chaining": "^7.21.0",
     "@babel/preset-env": "^7.25.4",
@@ -22,7 +25,6 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "style-loader": "^3.3.1",
-    "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
@@ -47,11 +49,6 @@
     ]
   },
   "license": "MIT",
-  "files": [
-    "build",
-    "README.md",
-    "package.json"
-  ],
   "description": "A React component that provides variable autosuggestion functionality with a rich text editor-like interface. This component allows users to type variables within curly braces and get intelligent suggestions based on predefined variables.",
   "keywords": [
     "react",
