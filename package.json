@@ -1,13 +1,11 @@
 {
   "name": "env-autosuggest",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "author": "Idris Bohra",
   "main": "build/index.js",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.3.0",
-    "webpack": "^5.73.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -23,6 +21,7 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
@@ -47,6 +46,14 @@
     ]
   },
   "license": "MIT",
+  "files": [
+    "build",
+    "README.md",
+    "package.json"
+  ],
+  "dependencies": {
+    "react-icons": "^5.3.0"
+  },
   "description": "A React component that provides variable autosuggestion functionality with a rich text editor-like interface. This component allows users to type variables within curly braces and get intelligent suggestions based on predefined variables.",
   "keywords": [
     "react",

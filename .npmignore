@@ -1,0 +1,6 @@
+src/
+public/
+webpack.config.js
+.git/
+node_modules/
+.DS_Store
