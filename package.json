@@ -1,6 +1,6 @@
 {
   "name": "docstar-env-autosuggest",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "Swayam Maheshwari",
   "main": "build/index.js",
   "dependencies": {
