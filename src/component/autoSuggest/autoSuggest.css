@@ -1,0 +1,104 @@
+.parent-div {
+    position: relative;
+    max-height: 36px;
+    min-height: 36px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.main__div {
+    width: 100%;
+    min-height: 36px;
+    top: 0px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1215686275);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    outline: none;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    &:focus-within {
+        border: 1px solid rgba(11, 10, 10, 0.57);
+        height: fit-content;
+        z-index: 98;
+    }
+}
+
+.main__div:focus-within .auto-suggest {
+    overflow: unset !important;
+    height: fit-content;
+}
+
+.main__div:focus-within .auto-suggest .__custom-autosuggest-block__ {
+    overflow: visible !important;
+    height: fit-content;
+    white-space: normal;
+    word-break: break-all;
+    z-index: 98;
+}
+
+.auto-suggest {
+    font-size: 12px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 7px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.__custom-autosuggest-block__ {
+    outline: none;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+.__custom-autosuggest-block__::-webkit-scrollbar {
+    display: none;
+}
+
+.placeholder-editable-div {
+    width: 100%;
+    position: absolute;
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.placeholder-text {
+    font-family: 'Inter';
+    margin: 7px;
+}
+
+span[variable-block] {
+    background-color: transparent;
+    color: orangered;
+    z-index: 1;
+    display: inline-block;
+}
+
+span[text-block] {
+    background-color: transparent;
+    z-index: 1;
+    display: inline-block;
+}
+
+span[variable-block]:hover {
+    color: rgb(255, 153, 0);
+    transition: .2s;
+}
+
+.disable-div {
+    background-color: rgba(174, 169, 169, 0.2);
+    cursor: not-allowed;
+    opacity: 0.75;
+}

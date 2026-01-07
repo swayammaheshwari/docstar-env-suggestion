@@ -1,0 +1,24 @@
+.__suggestions__container__ {
+    display: flex;
+    position: absolute;
+    font-size: 12px;
+    background-color: #F9F9F9;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    z-index: 100;
+    font-family: 'Inter';
+}
+
+.suggestion-item-div {
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.__main__suggestion__container__ {
+    flex-direction: column;
+    display: flex;
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 130px;
+    overflow: scroll;
+}

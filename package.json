@@ -1,0 +1,60 @@
+{
+  "name": "env-autosuggest",
+  "version": "0.1.24",
+  "author": "Idris Bohra",
+  "main": "build/index.js",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "webpack": "^5.73.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "MIT",
+  "description": "A React component that provides variable autosuggestion functionality with a rich text editor-like interface. This component allows users to type variables within curly braces and get intelligent suggestions based on predefined variables.",
+  "keywords": [
+    "react",
+    "autosuggest",
+    "variable-suggestions",
+    "rich-text-editor",
+    "curly-braces",
+    "tooltip",
+    "keyboard-navigation"
+  ]
+}
